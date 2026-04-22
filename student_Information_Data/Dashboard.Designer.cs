@@ -64,14 +64,14 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(160, 74);
+            txtSearch.Location = new Point(204, 61);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(204, 23);
             txtSearch.TabIndex = 1;
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(373, 71);
+            btnSearch.Location = new Point(434, 56);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(79, 30);
             btnSearch.TabIndex = 2;
@@ -82,9 +82,9 @@
             // dgvStudents
             // 
             dgvStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStudents.Location = new Point(12, 106);
+            dgvStudents.Location = new Point(19, 92);
             dgvStudents.Name = "dgvStudents";
-            dgvStudents.Size = new Size(433, 332);
+            dgvStudents.Size = new Size(494, 347);
             dgvStudents.TabIndex = 3;
             // 
             // label2
@@ -250,6 +250,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LimeGreen;
             ClientSize = new Size(969, 450);
             Controls.Add(txtID);
             Controls.Add(label9);

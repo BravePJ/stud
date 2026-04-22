@@ -596,23 +596,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CL1-PC16\\.nuget\\packages\\": {},
+    "C:\\Users\\CL3-PC35\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CL1-PC16\\source\\repos\\student_Information_Data\\student_Information_Data\\student_Information_Data.csproj",
+      "projectUniqueName": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
       "projectName": "student_Information_Data",
-      "projectPath": "C:\\Users\\CL1-PC16\\source\\repos\\student_Information_Data\\student_Information_Data\\student_Information_Data.csproj",
-      "packagesPath": "C:\\Users\\CL1-PC16\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CL1-PC16\\source\\repos\\student_Information_Data\\student_Information_Data\\obj\\",
+      "projectPath": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
+      "packagesPath": "C:\\Users\\CL3-PC35\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CL1-PC16\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CL3-PC35\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

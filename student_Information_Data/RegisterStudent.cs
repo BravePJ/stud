@@ -34,15 +34,18 @@ namespace student_Information_Data
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Declare inputs
-            string firstName = txtFirstname.Text.Trim();
-            string lastName = txtLastname.Text.Trim();
+            string firstname = txtFirstname.Text.Trim();
+            string lastname = txtLastname.Text.Trim();
             string course = cmbCourse.SelectedItem?.ToString();
             string section = cmbSection.SelectedItem?.ToString();
-            string birthdate = txtBirthdate.Text.Trim();    
+            string birthdate = txtBirthdate.Text.Trim(); 
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            string ID = txtID.Text.Trim();
             int age;
             // Validate inputs
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty
-            (lastName) ||
+            if (string.IsNullOrEmpty(firstname) || string.IsNullOrEmpty
+            (lastname) ||
             string.IsNullOrEmpty(course) || string.IsNullOrEmpty(section))
             {
                 MessageBox.Show("Please fill all fields.");
@@ -59,19 +62,23 @@ namespace student_Information_Data
             try
             {
                 db.Open();
-                string query = "INSERT INTO student_info (firstname, lastname, course, section, age) " +
-"VALUES (@firstname, @lastname, @course, @section, @age)";
+                string query = "INSERT INTO stud_info_data (ID, firstname, lastname, course, section, age, birthdate, username, password) " +
+"VALUES (@id, @firstname, @lastname, @course, @section, @age, @birthdate, @username, @password)";
             // Create the command
 MySql.Data.MySqlClient.MySqlCommand cmd =
 new MySql.Data.MySqlClient.MySqlCommand(query,
 db.Connection);
                 // Add parameters
-                cmd.Parameters.AddWithValue("@firstname", firstName);
-                cmd.Parameters.AddWithValue("@lastname", lastName);
+                cmd.Parameters.AddWithValue("@firstname", firstname);
+                cmd.Parameters.AddWithValue("@lastname", lastname);
                 cmd.Parameters.AddWithValue("@course", course);
                 cmd.Parameters.AddWithValue("@section", section);
                 cmd.Parameters.AddWithValue("@age", age);
                 cmd.Parameters.AddWithValue("@birthdate", birthdate);
+                cmd.Parameters.AddWithValue("@id", ID);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
+
                 // Execute the command
                 cmd.ExecuteNonQuery();
 
@@ -87,6 +94,9 @@ db.Connection);
                 cmbSection.SelectedIndex = -1;
                 txtAge.Clear();
                 txtBirthdate.Clear();
+                txtID.Clear();
+                txtUsername.Clear();
+                txtPassword.Clear();
             }
             catch (Exception ex)
             {
@@ -99,4 +109,3 @@ db.Connection);
         }
     }
  }
-

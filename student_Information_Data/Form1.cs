@@ -81,6 +81,11 @@ namespace student_Information_Data
             // Hide current Login form
             this.Hide();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

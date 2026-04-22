@@ -274,6 +274,7 @@
             Controls.Add(txtSearch);
             Controls.Add(label1);
             Name = "Dashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             Load += Dashboard_Load;
             ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();

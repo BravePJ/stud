@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj": {}
+    "C:\\Users\\CL2~PC20\\Downloads\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj": {
+    "C:\\Users\\CL2~PC20\\Downloads\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
+        "projectUniqueName": "C:\\Users\\CL2~PC20\\Downloads\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
         "projectName": "student_Information_Data",
-        "projectPath": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
-        "packagesPath": "C:\\Users\\CL3-PC35\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CL3-PC35\\Desktop\\stud-main\\stud-main\\student_Information_Data\\obj\\",
+        "projectPath": "C:\\Users\\CL2~PC20\\Downloads\\stud-main\\stud-main\\student_Information_Data\\student_Information_Data.csproj",
+        "packagesPath": "C:\\Users\\CL2~PC20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CL2~PC20\\Downloads\\stud-main\\stud-main\\student_Information_Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CL3-PC35\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CL2~PC20\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

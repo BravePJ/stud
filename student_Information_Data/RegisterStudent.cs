@@ -38,9 +38,7 @@ namespace student_Information_Data
             string lastname = txtLastname.Text.Trim();
             string course = cmbCourse.SelectedItem?.ToString();
             string section = cmbSection.SelectedItem?.ToString();
-            string birthdate = txtBirthdate.Text.Trim(); 
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
+            string birthdate = txtBirthdate.Text.Trim();
             string ID = txtID.Text.Trim();
             int age;
             // Validate inputs
@@ -62,12 +60,13 @@ namespace student_Information_Data
             try
             {
                 db.Open();
-                string query = "INSERT INTO stud_info_data (ID, firstname, lastname, course, section, age, birthdate, username, password) " +
-"VALUES (@id, @firstname, @lastname, @course, @section, @age, @birthdate, @username, @password)";
-            // Create the command
-MySql.Data.MySqlClient.MySqlCommand cmd =
-new MySql.Data.MySqlClient.MySqlCommand(query,
-db.Connection);
+
+                string query = "INSERT INTO student_info (ID, firstname, lastname, course, section, age, birthdate,) " +
+"VALUES (@id, @firstname, @lastname, @course, @section, @age, @birthdate,)";
+                // Create the command
+                MySql.Data.MySqlClient.MySqlCommand cmd =
+                new MySql.Data.MySqlClient.MySqlCommand(query,
+                db.Connection);
                 // Add parameters
                 cmd.Parameters.AddWithValue("@firstname", firstname);
                 cmd.Parameters.AddWithValue("@lastname", lastname);
@@ -76,8 +75,6 @@ db.Connection);
                 cmd.Parameters.AddWithValue("@age", age);
                 cmd.Parameters.AddWithValue("@birthdate", birthdate);
                 cmd.Parameters.AddWithValue("@id", ID);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@password", password);
 
                 // Execute the command
                 cmd.ExecuteNonQuery();
@@ -95,8 +92,6 @@ db.Connection);
                 txtAge.Clear();
                 txtBirthdate.Clear();
                 txtID.Clear();
-                txtUsername.Clear();
-                txtPassword.Clear();
             }
             catch (Exception ex)
             {
@@ -107,5 +102,12 @@ db.Connection);
                 db.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
- }
+}

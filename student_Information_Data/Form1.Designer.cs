@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            btnRegister = new Button();
             btnLogIn = new Button();
             txtPassword = new TextBox();
             txtUsername = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            btnRegister = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,6 +53,19 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(450, 228);
             panel1.TabIndex = 0;
+            // 
+            // btnRegister
+            // 
+            btnRegister.BackColor = Color.Black;
+            btnRegister.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.ForeColor = Color.White;
+            btnRegister.Location = new Point(6, 186);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(120, 39);
+            btnRegister.TabIndex = 6;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += button1_Click_1;
             // 
             // btnLogIn
             // 
@@ -109,25 +122,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(10, 4);
+            label1.Location = new Point(125, 15);
             label1.Name = "label1";
             label1.Size = new Size(184, 30);
             label1.TabIndex = 0;
             label1.Text = "STUDENT LOG IN";
             label1.Click += label1_Click;
-            // 
-            // btnRegister
-            // 
-            btnRegister.BackColor = Color.Black;
-            btnRegister.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(6, 186);
-            btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(120, 39);
-            btnRegister.TabIndex = 6;
-            btnRegister.Text = "Register";
-            btnRegister.UseVisualStyleBackColor = false;
-            btnRegister.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -137,7 +137,9 @@
             ClientSize = new Size(476, 253);
             Controls.Add(panel1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
